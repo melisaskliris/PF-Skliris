@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-md p-3 m-0 bg-black border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="header__img" src="../asset/image/pesa-rusa.png"><span class="text-white opacity-75">Ukyo Gym</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto p-2 m-1 ">
+                        <li class="nav-item">
+                            <a class="nav-link mb-2" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-2" href="./actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-2" href="./claseprueba.html">Clase prueba</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-2" href="./planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link mb-2" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="contacto__main">
+        <div class="contacto__text">
+            <h2>CONTACTO</h2>
+            <div>
+                <img class="contacto__img" src="/asset/image/fotoformulario.jpg" alt="imagen del gimnasio">
+            </div>
+            <H3>FORMULARIO</H3>
+            <p>DEJANOS TUS DATOS Y UN ASESOR SE ESTARÁ COMUNICANDO CON VOS</p>
+        </div>
+        <form method="post" enctype="text/plain">
+            <label for="nombre" ></label>
+            <input class="contacto__input form-control h-auto" type="text" placeholder="Nombre y Apellido" required id="nombre">
+            <label for="email"></label>
+            <input class="contacto__input form-control h-auto" type="email" placeholder="email" required id="email">
+            <label for="motivo"></label>
+            <select name="motivo" id="motivo" class="contacto__input form-control h-auto">
+                <option selected>Elige una opción</option>
+                <option value="1">Consulta</option>
+                <option value="2">Quiero ser socio</option>
+                <option value="3">Quiero una clase de prueba</option>
+                <option value="4">reclamos</option>
+            </select>
+            <label for="comentario"></label>
+            <textarea class="contacto__input textarea form-control h-auto" name="comentario" id="comentario"  placeholder="comentario" rows="5" cols="50"></textarea>
+            <input class="button form-control h-auto" type="submit" value="Enviar">
+        </form>
+        <div class="contacto">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-white mt-5 opacity-75">Tambien podes comunicarte a través de :</h3>
+                    <a href="#" class="mt-3"><img class="icon__contacto" src="../asset/image/instagram.png" alt="instagram">
+                        Ukyo Fit</a>
+                    <a href="#" class="mt-3"><img class="icon__contacto" src="../asset/image/facebook.png" alt="facebook">
+                        Ukyo Fit</a>
+                    <a href="tel=+1531390202" class="mt-3"><img class="icon__contacto" src="../asset/image/whatsapp.png" alt="whatsapp">
+                    tel: xx-xxxx-xxxx</a>
+                </div>
+            </div>
+        </div>
+        <div class="container maps">
+            <h2 class="text-white mt-5 mb-3 opacity-75">Encontranos en nuestra sucursal en el barrio de Mataderos</h2>
+            <p class="text-white mb-2 mt-3 opacity-75">Nuestra dirección : Oliden 1650</p>
+            <p class="text-white mb-5 opacity-75">Lunes a Sábado de 8:00 hs a 21:00 hs</p>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0213408824948!2d-58.505013324257575!3d-34.65416397293614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9072ebd0e59%3A0x9615bc79b4c0cd95!2sOliden%201650%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717711602977!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main> 
+    <footer class="container-fluit d-flex justify-content-between p-5 border-top">
+        <div class="row ">
+            <div class="d-flex flex-column text-white">
+                <p class="opacity-75 mb-2">UKYO FIT</p>
+                <p class="opacity-75 mb-3">Encontranos</p>
+            </div>
+            <ul class="d-flex gap-2 list-unstyled">
+                <li><a href="#" target="_blank" title="instagram"><img class="icon__item" src="../asset/image/instagram.png" alt="instagram"></a></li>
+                <li><a href="#" target="_blank" title="facebook" ><img class="icon__item" src="../asset/image/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://youtu.be/pK68rVDYl8A?si=JlYzu2cuEqe0mxt-" target="_blank" title="youtube"><img class="icon__item" src="../asset/image/youtube.png"  alt="youtube"></a></li>
+                <li><a href="#" target="_blank" title="whatsapp" ><img class="icon__item" src="../asset/image/whatsapp.png" alt="whatsapp"></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <ul class="d-flex flex-column gap-2 list-unstyled">
+                <li class="footer__item"><a href="contacto.html" class="text-white opacity-75">contacto</a></li>    
+                <li class="footer__item"><a href="claseprueba.html"class="text-white opacity-75" >pase prueba</a></li>
+                <li class="footer__item"><a href="#"class="text-white opacity-75">terminos y condiciones</a></li>
+            </ul>    
+        </div>
+        <div class="row d-flex flex-column justify-content-center">
+            <a href="../index.html"><img src="../asset/image/pesa-rusa.png" class="footer__img" alt="pesa rusa"></a>
+        </div>
+    </footer> 
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>   
+        

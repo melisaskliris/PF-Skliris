@@ -1,0 +1,36 @@
+/*PAGE ACTIVIDADES*/
+.actividades{
+    padding-bottom: 100px;
+}
+.actividades__card{
+    max-width: 90%;
+}
+.actividades img{
+    filter:grayscale(80%);
+    transition: filter 0s ease;
+    box-shadow: 0 4px 20px black;
+}
+main img:hover{
+    filter: grayscale(0%);
+}
+.actividades h2{
+    text-align: center;
+}
+.actividades h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.actividades p{
+    font-size: 18px;
+}
+@media (min-width:1024px) {
+    .actividades{
+        display: flex;
+        row-gap: 150px;
+        column-gap: 120px;
+    }
+    .actividades__card{
+        max-width: 40%;
+
+    }
+}

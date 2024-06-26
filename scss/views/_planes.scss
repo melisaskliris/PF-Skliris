@@ -30,7 +30,7 @@
     opacity: $opacity;
     border-radius: 10px;
 
-    :hover{
+    &:hover{
         -webkit-transform:scale(1.2);transform:scale(1.2);
         opacity: 1;
     }

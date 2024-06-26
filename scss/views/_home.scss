@@ -3,7 +3,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: $color-bg;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows:auto 1fr auto;
@@ -22,13 +22,15 @@ main{
 .home__titulo{
     background: radial-gradient(#262826, #040000);
     padding: 50px 0;
-}
-.home__titulo h1{
-    color:rgb(219, 209, 209);
+
+    h1{
+    color:$color-text-primary;
     text-align: center;
     font-size: 40px;
     font-weight:900;
+    }
 }
+
 .home{
     display: grid;
     gap: 20px;
@@ -50,21 +52,25 @@ main{
     filter: brightness(60%);
     align-items: flex-end;
     padding: 30px;
-}
-.home__asociate a{
-    background-color: black;
-    color:rgb(226, 232, 240);
-    font-weight: bold;
+
+    a{
+    background-color: $color-bg;
+    color:$color-text-primary;
+    font-weight:$font-weigth;
     padding: 15px;
-    border: 1px solid rgb(226, 232, 240);
+    border: $border-primary;
     border-radius: 20px;
-    opacity: 0.7;
+    opacity:$opacity;
+
+    &:hover,&:active{
+        background-color:$color-bg-secundary;
+        color: $color-bg;
+        opacity: 0.8;
+        }
+    }
 }
-.home__asociate a:hover,.home__asociate a:active{
-    background-color:yellowgreen;
-    color: black;
-    opacity: 0.8;
-}
+
+
 .home__actividades{
     grid-area: home__actividades;
     background: url(../asset/image/croosfit1.jpg);
@@ -75,6 +81,20 @@ main{
     align-items:end;
     padding: 20px;
     filter: brightness(70%);
+
+    a{
+        color:$color-text-primary;
+        font-size: 25px;
+        font-weight:$font-weigth;
+        opacity:$opacity;
+
+        &:hover,&:active{
+            border-bottom:$border-secundary;
+            color: $color-text-secundary;
+            padding: 3px;
+            opacity: 1;
+        }
+    }
 }
 .home__prueba{
     grid-area: home__prueba;
@@ -86,19 +106,22 @@ main{
     align-items:end;
     padding: 20px;
     filter: brightness(70%);
+
+    a{
+        color:$color-text-primary;
+        font-size: 25px;
+        font-weight:$font-weigth;
+        opacity:$opacity;
+
+        &:hover,&:active{
+            border-bottom:$border-secundary;
+            color: $color-text-secundary;
+            padding: 3px;
+            opacity: 1;
+        }
+    }
 }
-.home__actividades a , .home__prueba a{
-    color: rgb(226, 232, 240);
-    font-size: 25px;
-    font-weight: bold;
-    opacity: 0.7;
-}
-.home__actividades a:hover , .home__prueba a:hover ,.home__actividades a:active , .home__prueba a:active{
-    border-bottom: 2px solid yellowgreen;
-    color: yellowgreen;
-    padding: 3px;
-    opacity: 1;
-}
+
 
 @media (min-width:768px){
     .home{
@@ -113,13 +136,13 @@ main{
     }
     .home__asociate a{
         font-size: 20px;
-        border: 2px solid rgb(226, 232, 240);
+        border: $border-primary;
     }
     .home__actividades a , .home__prueba a{
         font-size: 30px; 
     }
     .navbar{
-        font-family: "Raleway", sans-serif;;
+        font-family: $font-family;
         font-weight: 500;
         font-size: 20px;
         margin-left: 8px;
@@ -135,17 +158,19 @@ main{
     }
     .home__asociate {
         padding: 70px;
-    }
-    .home__asociate a{
+
+        a{
         font-size: 25px;
         padding: 15px; 
+        }
     }
+    
     .home__actividades a , .home__prueba a{
         padding: 20px;
         font-size: 40px;
     }
     .home__actividades a:hover , .home__prueba a:hover ,.home__actividades a:active , .home__prueba a:active{
-        border-bottom: 2px solid rgb(226, 232, 240);
+        border-bottom: $border-primary;
         padding: 5px;
         opacity: 1;
     }

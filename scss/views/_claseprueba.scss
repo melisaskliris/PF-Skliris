@@ -1,11 +1,9 @@
 /*pagina clase de prueba*/
 
 .claseprueba__main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     text-align: center;
-    background-color: black;
+    background-color: $color-bg;
 
     h2{
         color:rgb(226, 232, 240);
@@ -20,26 +18,13 @@
     flex-direction: column;
     gap: 30px;
     margin-bottom: 70px;
-}
-.claseprueba__act h4{
-    color: rgb(226, 232, 240)e;
-}
-.claseprueba__act button{
-    height: 40px;
-    width: 140px;
-    border: none;
-    font-weight: bolder;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: yellowgreen;
-    opacity: 0.7;
-    transition: all 0.3 ease-out;
-} 
-.claseprueba__act button:hover,.claseprueba__act button :checked{
-    transform: scale(1.1);
-    opacity: 2;
-}
-.claseprueba__act iframe{
+
+    h4{
+        color:$color-text-primary;
+    }
+
+    iframe{
     max-width: 60%;
     margin: auto;
+    }
 }

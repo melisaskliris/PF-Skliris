@@ -130,9 +130,8 @@ main {
   background: radial-gradient(#262826, #040000);
   padding: 50px 0;
 }
-
 .home__titulo h1 {
-  color: rgb(219, 209, 209);
+  color: rgb(206, 200, 200);
   text-align: center;
   font-size: 40px;
   font-weight: 900;
@@ -156,17 +155,15 @@ main {
   align-items: flex-end;
   padding: 30px;
 }
-
 .home__asociate a {
   background-color: black;
-  color: rgb(226, 232, 240);
-  font-weight: bold;
+  color: rgb(206, 200, 200);
+  font-weight: bolder;
   padding: 15px;
-  border: 1px solid rgb(226, 232, 240);
+  border: 2px solid rgb(206, 200, 200);
   border-radius: 20px;
   opacity: 0.7;
 }
-
 .home__asociate a:hover, .home__asociate a:active {
   background-color: yellowgreen;
   color: black;
@@ -184,6 +181,18 @@ main {
   padding: 20px;
   filter: brightness(70%);
 }
+.home__actividades a {
+  color: rgb(206, 200, 200);
+  font-size: 25px;
+  font-weight: bolder;
+  opacity: 0.7;
+}
+.home__actividades a:hover, .home__actividades a:active {
+  border-bottom: 2px solid yellowgreen;
+  color: yellowgreen;
+  padding: 3px;
+  opacity: 1;
+}
 
 .home__prueba {
   grid-area: home__prueba;
@@ -196,15 +205,13 @@ main {
   padding: 20px;
   filter: brightness(70%);
 }
-
-.home__actividades a, .home__prueba a {
-  color: rgb(226, 232, 240);
+.home__prueba a {
+  color: rgb(206, 200, 200);
   font-size: 25px;
-  font-weight: bold;
+  font-weight: bolder;
   opacity: 0.7;
 }
-
-.home__actividades a:hover, .home__prueba a:hover, .home__actividades a:active, .home__prueba a:active {
+.home__prueba a:hover, .home__prueba a:active {
   border-bottom: 2px solid yellowgreen;
   color: yellowgreen;
   padding: 3px;
@@ -221,13 +228,13 @@ main {
   }
   .home__asociate a {
     font-size: 20px;
-    border: 2px solid rgb(226, 232, 240);
+    border: 2px solid rgb(206, 200, 200);
   }
   .home__actividades a, .home__prueba a {
     font-size: 30px;
   }
   .navbar {
-    font-family: "Raleway", sans-serif;
+    font-family: "Releway", sans-serif;
     font-weight: 500;
     font-size: 20px;
     margin-left: 8px;
@@ -252,7 +259,7 @@ main {
     font-size: 40px;
   }
   .home__actividades a:hover, .home__prueba a:hover, .home__actividades a:active, .home__prueba a:active {
-    border-bottom: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(206, 200, 200);
     padding: 5px;
     opacity: 1;
   }
@@ -301,6 +308,9 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.contacto__main iframe {
+  max-width: 70%;
+}
 
 .contacto__img {
   width: 300px;
@@ -339,7 +349,6 @@ main {
   text-align: center;
   margin-top: 30px;
 }
-
 .contacto a {
   text-decoration: none;
   color: yellowgreen;
@@ -353,13 +362,10 @@ main {
 .maps {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 80px;
-}
-
-.contacto__main iframe {
-  max-width: 70%;
 }
 
 @media (min-width: 1024px) {
@@ -413,63 +419,57 @@ form option .textarea {
 .planes__main h2 {
   font-size: 23px;
   margin-bottom: 25px;
-  color: rgb(226, 232, 240);
+  color: rgb(206, 200, 200);
 }
 .planes__main p {
   font-size: 18px;
-  color: rgb(226, 232, 240);
+  color: rgb(206, 200, 200);
 }
 
 .planes__cards {
   margin: 90px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .planes__list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px solid yellowgreen;
+  border: 2px solid yellowgreen;
   width: 300px;
   height: 650px;
   margin-bottom: 80px;
   opacity: 0.7;
   border-radius: 10px;
 }
-
-.planes__list:hover {
+.planes__list :hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   opacity: 1;
 }
-
 .planes__list li {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: rgb(226, 232, 240);
+  color: rgb(206, 200, 200);
 }
-
 .planes__list li:first-child {
   font-size: 30px;
   text-align: center;
 }
-
 .planes__list li:nth-child(2) {
   font-size: 35px;
   margin-left: 60px;
 }
-
 .planes__list img {
   width: 25px;
   height: 25px;
 }
-
 .planes__list span {
-  color: rgb(226, 232, 240);
+  color: rgb(206, 200, 200);
 }
 
 @media (min-width: 1024px) {
@@ -489,6 +489,7 @@ form option .textarea {
 .claseprueba__main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
   background-color: black;
@@ -507,28 +508,9 @@ form option .textarea {
   gap: 30px;
   margin-bottom: 70px;
 }
-
 .claseprueba__act h4 {
-  color: rgb(226, 232, 240) e;
+  color: rgb(206, 200, 200);
 }
-
-.claseprueba__act button {
-  height: 40px;
-  width: 140px;
-  border: none;
-  font-weight: bolder;
-  border-radius: 10px;
-  text-decoration: none;
-  background-color: yellowgreen;
-  opacity: 0.7;
-  transition: all 0.3 ease-out;
-}
-
-.claseprueba__act button:hover, .claseprueba__act button :checked {
-  transform: scale(1.1);
-  opacity: 2;
-}
-
 .claseprueba__act iframe {
   max-width: 60%;
   margin: auto;

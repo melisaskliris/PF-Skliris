@@ -20,14 +20,12 @@
 
     &:hover{
         filter: grayscale(0%);
-    }
+        }
     }
 }
 .actividades__card{
     max-width: 90%;
 }
-
-
 
 @media (min-width:1024px) {
     .actividades{
@@ -37,6 +35,5 @@
     }
     .actividades__card{
         max-width: 40%;
-
     }
 }

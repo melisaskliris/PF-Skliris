@@ -3,72 +3,74 @@
 .planes__main{
     text-align: center;
     padding-top: 50px;
-    background-color:black;
+    background-color:$color-bg;
 
     h2{
         font-size: 23px;
         margin-bottom: 25px;
-        color: rgb(226, 232, 240);
+        color:$color-text-primary;
     }
     p{
         font-size: 18px;
-        color: rgb(226, 232, 240);
+        color: $color-text-primary;
     }
 }
 .planes__cards{
     margin: 90px 0;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
+    @include flex-column-center;
 }
 .planes__list{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid yellowgreen;
+    border: $border-secundary;
     width: 300px;
     height: 650px;
     margin-bottom: 80px;
-    opacity: 0.7;
+    opacity: $opacity;
     border-radius: 10px;
-}
-.planes__list:hover{
-    -webkit-transform:scale(1.2);transform:scale(1.2);
-    opacity: 1;
-} 
-.planes__list li{
+
+    :hover{
+        -webkit-transform:scale(1.2);transform:scale(1.2);
+        opacity: 1;
+    }
+
+    li{
     display: flex;
     align-items: center;
     gap: 5px;
-    color:rgb(226, 232, 240);
-}
+    color:$color-text-primary;
 
-.planes__list li:first-child{
-    font-size: 30px;
-    text-align: center;
-}
-.planes__list li:nth-child(2){
-    font-size: 35px;
-    margin-left: 60px;
-}
-.planes__list img{
+    &:first-child{
+        font-size: 30px;
+        text-align: center;
+        }
+
+    &:nth-child(2){
+        font-size: 35px;
+        margin-left: 60px;
+        }    
+    }
+
+    img{
     width: 25px;
     height: 25px;
+    }
+    span{
+    color:$color-text-primary;
+    }
 }
-.planes__list span{
-    color:rgb(226, 232, 240);
-}
-
 
 
 @media (min-width:1024px){
-    .planes__main h2{
+    .planes__main{
+        h2{
         font-size: 50px;
-    }
-    .planes__main p{
+        }
+        p{
         font-size: 40px;
-    }
+        }
+    } 
     .planes__cards{
         display: flex;
         flex-flow: row wrap;

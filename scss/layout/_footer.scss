@@ -2,14 +2,16 @@
 
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: $color-bg;
     justify-content: space-around;
+
+    p , a{
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+    }
 }
-footer p, footer a{
-    font-family: "Raleway", sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-}
+
 .footer__img{
     width:50px;
     height: 50px;

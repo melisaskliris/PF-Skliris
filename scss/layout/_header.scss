@@ -9,13 +9,13 @@ header a{
 }
 
 .collapse a:hover , .collapse a:active{
-    border-bottom: 1px solid yellowgreen;
-    color: yellowgreen;
+    border-bottom: $border-secundary;
+    color: $color-text-secundary;
     opacity: 0.7;
 }
 .navbar{
-    font-family: "Raleway", sans-serif;;
-    font-weight: 500;
+    font-family:$font-family;
+    font-weight: $font-weigth;
 }
 
 @media (min-width:768px) {

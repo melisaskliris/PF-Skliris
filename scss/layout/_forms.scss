@@ -1,23 +1,24 @@
 /*formulario*/
 form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     gap: 15px;
     border-radius: 10px;
     max-width: 70%;
     margin: auto;
+
+    & input, textarea:focus{
+        border: $border-secundary;
+    }
+    option{
+        background-color:$color-bg-secundary;
+
+        :focus{
+        outline: none;
+        }
+        & .textarea{
+            height: 150px;
+            resize: none;
+        }
+    }
 }
-form input,textarea:focus{
-    border: 2px solid greenyellow;
-}
-form option{
-    background-color:yellowgreen;
-}
-form option:focus{
-    outline: none;
-}
-.textarea{
-    height: 150px;
-    resize: none;
-}  
+

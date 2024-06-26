@@ -444,6 +444,11 @@ form option .textarea {
   margin-bottom: 80px;
   opacity: 0.7;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.planes__list:hover {
+  transform: scale(1.2);
+  opacity: 1;
 }
 .planes__list li {
   display: flex;
@@ -465,12 +470,6 @@ form option .textarea {
 }
 .planes__list span {
   color: rgb(206, 200, 200);
-}
-
-.planes__list:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  opacity: 1;
 }
 
 @media (min-width: 1024px) {

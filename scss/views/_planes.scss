@@ -29,6 +29,12 @@
     margin-bottom: 80px;
     opacity: $opacity;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.2);
+        opacity: 1;
+    }
 
     li{
     display: flex;
@@ -55,11 +61,6 @@
     color:$color-text-primary;
     }
 }
-.planes__list:hover{
-    -webkit-transform:scale(1.2);transform:scale(1.2);
-    opacity: 1;
-}
-
 
 @media (min-width:1024px){
     .planes__main{

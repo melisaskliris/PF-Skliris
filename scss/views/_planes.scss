@@ -62,7 +62,7 @@
     }
 }
 
-@media (min-width:1024px){
+@include respond-to ("desktop"){
     .planes__main{
         h2{
         font-size: 50px;

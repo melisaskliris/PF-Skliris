@@ -123,7 +123,7 @@ main{
 }
 
 
-@media (min-width:768px){
+@include respond-to ("tablet"){
     .home{
         grid-template-columns:repeat(2,1fr);
         grid-template-rows:500px 300px ;
@@ -149,7 +149,7 @@ main{
     }
 }
 
-@media (min-width:1024px){
+@include respond-to ("desktop"){
     .home{
         padding: 0 10px;
         grid-template-rows:600px 500px ;

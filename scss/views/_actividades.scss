@@ -27,7 +27,7 @@
     max-width: 90%;
 }
 
-@media (min-width:1024px) {
+@include respond-to ("desktop") {
     .actividades{
         display: flex;
         row-gap: 150px;

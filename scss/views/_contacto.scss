@@ -64,7 +64,7 @@
     margin-bottom: 80px;
 }  
 
-@media (min-width:1024px){
+@include respond-to ("desktop"){
     .contacto__text{
         h2{
         font-size: 30px;

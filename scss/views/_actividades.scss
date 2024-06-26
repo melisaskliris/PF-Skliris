@@ -1,28 +1,34 @@
 /*PAGE ACTIVIDADES*/
 .actividades{
     padding-bottom: 100px;
+
+    h2{
+    text-align: center;
+    }
+    h3{
+    font-size: 25px;
+    font-weight:$font-weigth;
+    }
+    p{
+    font-size: 18px;
+    }
+
+    img{
+    filter:grayscale(80%);
+    transition: filter 0s ease;
+    box-shadow: 0 4px 20px black;
+
+    &:hover{
+        filter: grayscale(0%);
+    }
+    }
 }
 .actividades__card{
     max-width: 90%;
 }
-.actividades img{
-    filter:grayscale(80%);
-    transition: filter 0s ease;
-    box-shadow: 0 4px 20px black;
-}
-main img:hover{
-    filter: grayscale(0%);
-}
-.actividades h2{
-    text-align: center;
-}
-.actividades h3{
-    font-size: 25px;
-    font-weight: bold;
-}
-.actividades p{
-    font-size: 18px;
-}
+
+
+
 @media (min-width:1024px) {
     .actividades{
         display: flex;

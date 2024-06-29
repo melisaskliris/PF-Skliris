@@ -514,6 +514,8 @@ form option .textarea {
 .claseprueba__act iframe {
   max-width: 60%;
   margin: auto;
+  width: 560px;
+  height: 315px;
 }
 
 /*footer*/

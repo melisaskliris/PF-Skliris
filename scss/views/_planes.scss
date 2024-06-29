@@ -4,15 +4,25 @@
     text-align: center;
     padding-top: 50px;
     background-color:$color-bg;
+    padding: 0;
 
-    h2{
-        font-size: 23px;
-        margin-bottom: 25px;
-        color:$color-text-primary;
-    }
     p{
         font-size: 18px;
         color: $color-text-primary;
+        font-weight: $font-weigth;
+        margin-top: 30px;
+    }
+}
+.planes__titulo{
+    background: radial-gradient(#262826, #040000);
+    width: 100%;
+    padding: 50px 0;
+
+    h2{
+        color:$color-text-primary;
+        text-align: center;
+        font-size: 40px;
+        font-weight:900;
     }
 }
 .planes__cards{
@@ -33,14 +43,16 @@
 
     &:hover{
         transform: scale(1.2);
-        opacity: 1;
+        opacity: 0.9;
+        color: #040000;
+        background-color: $color-text-secundary;
     }
 
     li{
     display: flex;
     align-items: center;
     gap: 5px;
-    color:$color-text-primary;
+    color:rgb(105, 100, 100);
 
     &:first-child{
         font-size: 30px;
@@ -56,9 +68,6 @@
     img{
     width: 25px;
     height: 25px;
-    }
-    span{
-    color:$color-text-primary;
     }
 }
 

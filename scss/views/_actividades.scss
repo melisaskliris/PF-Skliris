@@ -2,9 +2,6 @@
 .actividades{
     padding-bottom: 100px;
 
-    h2{
-    text-align: center;
-    }
     h3{
     font-size: 25px;
     font-weight:$font-weigth;
@@ -22,6 +19,17 @@
         filter: grayscale(0%);
         }
     }
+}
+.actividades__titulo{
+    background: radial-gradient(#262826, #040000);
+    padding: 50px 0;
+
+    h2{
+        text-align: center;
+        color:$color-text-primary;
+        font-size: 40px;
+        font-weight:900;
+        }
 }
 .actividades__card{
     max-width: 90%;

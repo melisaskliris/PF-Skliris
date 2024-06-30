@@ -20,3 +20,19 @@
         }
     }       
 }
+
+@mixin enlaces-home{
+    background-color: $color-bg;
+    color:$color-text-primary;
+    font-weight:$font-weigth;
+    padding: 15px;
+    text-decoration: none;
+    border: $border-primary;
+    border-radius: 20px;
+
+    &:hover,&:active{
+        background-color:$color-bg-secundary;
+        color: $color-bg;
+        border: $color-bg;
+    }
+}

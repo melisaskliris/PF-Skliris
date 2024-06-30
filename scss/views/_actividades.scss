@@ -1,13 +1,16 @@
 /*PAGE ACTIVIDADES*/
 .actividades{
-    padding-bottom: 100px;
+    justify-content: center;
+    width: 100%;
 
     h3{
     font-size: 25px;
     font-weight:$font-weigth;
+    color:$color-bg;
     }
     p{
     font-size: 18px;
+
     }
 
     img{
@@ -27,12 +30,26 @@
     h2{
         text-align: center;
         color:$color-text-primary;
-        font-size: 40px;
+        font-size: 28px;
         font-weight:900;
         }
 }
 .actividades__card{
     max-width: 90%;
+}
+
+@include respond-to ("tablet"){
+    .actividades{
+        h3{
+            font-size: 30px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .actividades__titulo h2{
+            font-size: 32px;
+        }
+    }
 }
 
 @include respond-to ("desktop") {
@@ -43,5 +60,8 @@
     }
     .actividades__card{
         max-width: 40%;
+    }
+    .actividades__titulo h2{
+        font-size: 40px;
     }
 }

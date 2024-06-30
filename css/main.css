@@ -136,7 +136,7 @@ main {
   background-size: cover;
   display: flex;
   justify-content: center;
-  filter: brightness(60%);
+  filter: brightness(70%);
   align-items: flex-end;
   padding: 30px;
 }
@@ -145,14 +145,14 @@ main {
   color: rgb(206, 200, 200);
   font-weight: bolder;
   padding: 15px;
+  text-decoration: none;
   border: 2px solid rgb(206, 200, 200);
   border-radius: 20px;
-  opacity: 0.7;
 }
 .home__asociate a:hover, .home__asociate a:active {
   background-color: yellowgreen;
   color: black;
-  opacity: 0.8;
+  border: black;
 }
 
 .home__actividades {
@@ -161,22 +161,24 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: left;
-  align-items: end;
+  justify-content: center;
+  align-items: flex-end;
   padding: 20px;
   filter: brightness(70%);
 }
 .home__actividades a {
+  background-color: black;
   color: rgb(206, 200, 200);
-  font-size: 25px;
   font-weight: bolder;
-  opacity: 0.7;
+  padding: 15px;
+  text-decoration: none;
+  border: 2px solid rgb(206, 200, 200);
+  border-radius: 20px;
 }
 .home__actividades a:hover, .home__actividades a:active {
-  border-bottom: 2px solid yellowgreen;
-  color: yellowgreen;
-  padding: 3px;
-  opacity: 1;
+  background-color: yellowgreen;
+  color: black;
+  border: black;
 }
 
 .home__prueba {
@@ -185,22 +187,24 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: left;
-  align-items: end;
+  justify-content: center;
+  align-items: flex-end;
   padding: 20px;
   filter: brightness(70%);
 }
 .home__prueba a {
+  background-color: black;
   color: rgb(206, 200, 200);
-  font-size: 25px;
   font-weight: bolder;
-  opacity: 0.7;
+  padding: 15px;
+  text-decoration: none;
+  border: 2px solid rgb(206, 200, 200);
+  border-radius: 20px;
 }
 .home__prueba a:hover, .home__prueba a:active {
-  border-bottom: 2px solid yellowgreen;
-  color: yellowgreen;
-  padding: 3px;
-  opacity: 1;
+  background-color: yellowgreen;
+  color: black;
+  border: black;
 }
 
 @media (min-width: 768px) {
@@ -210,13 +214,6 @@ main {
     row-gap: 5px;
     column-gap: 5px;
     grid-template-areas: "home__asociate home__asociate" "home__actividades home__prueba";
-  }
-  .home__asociate a {
-    font-size: 20px;
-    border: 2px solid rgb(206, 200, 200);
-  }
-  .home__actividades a, .home__prueba a {
-    font-size: 30px;
   }
   .navbar {
     font-family: "Releway", sans-serif;
@@ -237,25 +234,20 @@ main {
   }
   .home__asociate a {
     font-size: 25px;
-    padding: 15px;
   }
   .home__actividades a, .home__prueba a {
-    padding: 20px;
-    font-size: 40px;
-  }
-  .home__actividades a:hover, .home__prueba a:hover, .home__actividades a:active, .home__prueba a:active {
-    border-bottom: 2px solid rgb(206, 200, 200);
-    padding: 5px;
-    opacity: 1;
+    font-size: 25px;
   }
 }
 /*PAGE ACTIVIDADES*/
 .actividades {
-  padding-bottom: 100px;
+  justify-content: center;
+  width: 100%;
 }
 .actividades h3 {
   font-size: 25px;
   font-weight: bolder;
+  color: black;
 }
 .actividades p {
   font-size: 18px;
@@ -276,7 +268,7 @@ main {
 .actividades__titulo h2 {
   text-align: center;
   color: rgb(206, 200, 200);
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 900;
 }
 
@@ -284,6 +276,17 @@ main {
   max-width: 90%;
 }
 
+@media (min-width: 768px) {
+  .actividades h3 {
+    font-size: 30px;
+  }
+  .actividades p {
+    font-size: 25px;
+  }
+  .actividades .actividades__titulo h2 {
+    font-size: 32px;
+  }
+}
 @media (min-width: 1024px) {
   .actividades {
     display: flex;
@@ -292,6 +295,9 @@ main {
   }
   .actividades__card {
     max-width: 40%;
+  }
+  .actividades__titulo h2 {
+    font-size: 40px;
   }
 }
 /*PAGE CONTACTO*/
@@ -337,7 +343,7 @@ main {
 .contacto__titulo h2 {
   color: rgb(206, 200, 200);
   text-align: center;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 900;
 }
 
@@ -367,7 +373,15 @@ main {
   margin-bottom: 80px;
 }
 
+@media (min-width: 768px) {
+  .contacto__titulo h2 {
+    font-size: 32px;
+  }
+}
 @media (min-width: 1024px) {
+  .contacto__titulo h2 {
+    font-size: 40px;
+  }
   .contacto__text h3 {
     font-size: 30px;
   }
@@ -428,7 +442,7 @@ form option .textarea {
 .planes__titulo h2 {
   color: rgb(206, 200, 200);
   text-align: center;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 900;
 }
 
@@ -477,12 +491,17 @@ form option .textarea {
   height: 25px;
 }
 
+@media (min-width: 768px) {
+  .planes__titulo h2 {
+    font-size: 32px;
+  }
+}
 @media (min-width: 1024px) {
   .planes__main h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .planes__main p {
-    font-size: 40px;
+    font-size: 35px;
   }
   .planes__cards {
     display: flex;
@@ -511,7 +530,7 @@ form option .textarea {
 .claseprueba__titulo h2 {
   color: rgb(206, 200, 200);
   text-align: center;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 900;
 }
 
@@ -549,6 +568,16 @@ form option .textarea {
   opacity: 2;
 }
 
+@media (min-width: 768px) {
+  .claseprueba__titulo h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .claseprueba__titulo h2 {
+    font-size: 40px;
+  }
+}
 /*footer*/
 footer {
   grid-area: footer;

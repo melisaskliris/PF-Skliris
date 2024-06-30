@@ -49,24 +49,12 @@ main{
     background-size:cover;
     display: flex;
     justify-content: center;
-    filter: brightness(60%);
+    filter: brightness(70%);
     align-items: flex-end;
     padding: 30px;
 
     a{
-    background-color: $color-bg;
-    color:$color-text-primary;
-    font-weight:$font-weigth;
-    padding: 15px;
-    border: $border-primary;
-    border-radius: 20px;
-    opacity:$opacity;
-
-    &:hover,&:active{
-        background-color:$color-bg-secundary;
-        color: $color-bg;
-        opacity: 0.8;
-        }
+        @include enlaces-home;
     }
 }
 
@@ -77,23 +65,13 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content:left;
-    align-items:end;
+    justify-content:center;
+    align-items:flex-end;
     padding: 20px;
     filter: brightness(70%);
 
     a{
-        color:$color-text-primary;
-        font-size: 25px;
-        font-weight:$font-weigth;
-        opacity:$opacity;
-
-        &:hover,&:active{
-            border-bottom:$border-secundary;
-            color: $color-text-secundary;
-            padding: 3px;
-            opacity: 1;
-        }
+        @include enlaces-home;
     }
 }
 .home__prueba{
@@ -102,23 +80,13 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content:left;
-    align-items:end;
+    justify-content:center;
+    align-items:flex-end;
     padding: 20px;
     filter: brightness(70%);
 
     a{
-        color:$color-text-primary;
-        font-size: 25px;
-        font-weight:$font-weigth;
-        opacity:$opacity;
-
-        &:hover,&:active{
-            border-bottom:$border-secundary;
-            color: $color-text-secundary;
-            padding: 3px;
-            opacity: 1;
-        }
+        @include enlaces-home;
     }
 }
 
@@ -134,13 +102,7 @@ main{
         "home__asociate home__asociate"
         "home__actividades home__prueba"
     }
-    .home__asociate a{
-        font-size: 20px;
-        border: $border-primary;
-    }
-    .home__actividades a , .home__prueba a{
-        font-size: 30px; 
-    }
+    
     .navbar{
         font-family: $font-family;
         font-weight: 500;
@@ -160,18 +122,11 @@ main{
         padding: 70px;
 
         a{
-        font-size: 25px;
-        padding: 15px; 
+        font-size: 25px; 
         }
     }
     
     .home__actividades a , .home__prueba a{
-        padding: 20px;
-        font-size: 40px;
-    }
-    .home__actividades a:hover , .home__prueba a:hover ,.home__actividades a:active , .home__prueba a:active{
-        border-bottom: $border-primary;
-        padding: 5px;
-        opacity: 1;
+        font-size: 25px;
     }
 }

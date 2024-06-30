@@ -1,5 +1,4 @@
 /*pagina planes*/
-
 .planes__main{
     text-align: center;
     padding-top: 50px;
@@ -10,7 +9,6 @@
         font-size: 18px;
         color: $color-text-primary;
         font-weight: $font-weigth;
-        margin-top: 30px;
     }
 }
 .planes__titulo{
@@ -70,6 +68,7 @@
     height: 25px;
     }
 }
+
 @include respond-to ("tablet"){
     .planes__titulo h2{
         font-size: 32px;

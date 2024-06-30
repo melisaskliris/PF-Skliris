@@ -9,6 +9,18 @@
         max-width: 70%;
     }
 }
+.contacto__titulo{
+    background: radial-gradient(#262826, #040000);
+    width: 100%;
+    padding: 50px 0;
+
+    h2{
+        color:$color-text-primary;
+        text-align: center;
+        font-size: 28px;
+        font-weight:900;
+    }
+}
 .contacto__img{
     width: 300px;
     height: 350px;
@@ -30,19 +42,6 @@
         font-size: 15px;
     }
 }
-.contacto__titulo{
-    background: radial-gradient(#262826, #040000);
-    width: 100%;
-    padding: 50px 0;
-
-    h2{
-        color:$color-text-primary;
-        text-align: center;
-        font-size: 28px;
-        font-weight:900;
-    }
-}
-
 .contacto{
     display: flex;
     flex-direction: column;
@@ -59,17 +58,18 @@
     width: 20px;
     height: 20px;
 }
-
 .maps{
     @include flex-column-center;
     text-align: center;
     margin-bottom: 80px;
 }  
+
 @include respond-to ("tablet"){
     .contacto__titulo h2{
         font-size: 32px;
     }
 }
+
 @include respond-to ("desktop"){
     .contacto__titulo h2{
         font-size: 40px;
@@ -86,7 +86,7 @@
     .contacto a{
         font-size: 25px;
         }
-    
+
     .maps{
         p{
         font-size: 20px;

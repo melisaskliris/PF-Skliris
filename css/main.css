@@ -232,14 +232,22 @@ main {
   .home__asociate {
     padding: 70px;
   }
-  .home__asociate a {
-    font-size: 25px;
-  }
-  .home__actividades a, .home__prueba a {
+  .home__actividades a, .home__prueba a, .home__asociate {
     font-size: 25px;
   }
 }
 /*PAGE ACTIVIDADES*/
+.actividades__titulo {
+  background: radial-gradient(#262826, #040000);
+  padding: 50px 0;
+}
+.actividades__titulo h2 {
+  text-align: center;
+  color: rgb(206, 200, 200);
+  font-size: 28px;
+  font-weight: 900;
+}
+
 .actividades {
   justify-content: center;
   width: 100%;
@@ -259,17 +267,6 @@ main {
 }
 .actividades img:hover {
   filter: grayscale(0%);
-}
-
-.actividades__titulo {
-  background: radial-gradient(#262826, #040000);
-  padding: 50px 0;
-}
-.actividades__titulo h2 {
-  text-align: center;
-  color: rgb(206, 200, 200);
-  font-size: 28px;
-  font-weight: 900;
 }
 
 .actividades__card {
@@ -311,6 +308,18 @@ main {
   max-width: 70%;
 }
 
+.contacto__titulo {
+  background: radial-gradient(#262826, #040000);
+  width: 100%;
+  padding: 50px 0;
+}
+.contacto__titulo h2 {
+  color: rgb(206, 200, 200);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+}
+
 .contacto__img {
   width: 300px;
   height: 350px;
@@ -333,18 +342,6 @@ main {
 .contacto__text p {
   color: rgb(206, 200, 200);
   font-size: 15px;
-}
-
-.contacto__titulo {
-  background: radial-gradient(#262826, #040000);
-  width: 100%;
-  padding: 50px 0;
-}
-.contacto__titulo h2 {
-  color: rgb(206, 200, 200);
-  text-align: center;
-  font-size: 28px;
-  font-weight: 900;
 }
 
 .contacto {
@@ -431,7 +428,6 @@ form option .textarea {
   font-size: 18px;
   color: rgb(206, 200, 200);
   font-weight: bolder;
-  margin-top: 30px;
 }
 
 .planes__titulo {
@@ -510,18 +506,6 @@ form option .textarea {
   }
 }
 /*pagina clase de prueba*/
-.claseprueba__main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: black;
-}
-.claseprueba__main h4 {
-  color: rgb(206, 200, 200);
-}
-
 .claseprueba__titulo {
   background: radial-gradient(#262826, #040000);
   padding: 50px 0;
@@ -532,6 +516,18 @@ form option .textarea {
   text-align: center;
   font-size: 28px;
   font-weight: 900;
+}
+
+.claseprueba__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+.claseprueba__main h4 {
+  color: rgb(206, 200, 200);
 }
 
 .claseprueba__act {
@@ -555,6 +551,7 @@ form option .textarea {
   width: 140px;
   border: none;
   color: white;
+  justify-content: center;
   align-content: center;
   background-color: yellowgreen;
   font-weight: bolder;

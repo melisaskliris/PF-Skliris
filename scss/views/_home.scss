@@ -30,7 +30,6 @@ main{
     font-weight:900;
     }
 }
-
 .home{
     display: grid;
     gap: 13px;
@@ -57,8 +56,6 @@ main{
         @include enlaces-home;
     }
 }
-
-
 .home__actividades{
     grid-area: home__actividades;
     background: url(../asset/image/croosfit1.jpg);
@@ -90,7 +87,6 @@ main{
     }
 }
 
-
 @include respond-to ("tablet"){
     .home{
         grid-template-columns:repeat(2,1fr);
@@ -102,7 +98,6 @@ main{
         "home__asociate home__asociate"
         "home__actividades home__prueba"
     }
-    
     .navbar{
         font-family: $font-family;
         font-weight: 500;
@@ -120,13 +115,8 @@ main{
     }
     .home__asociate {
         padding: 70px;
-
-        a{
-        font-size: 25px; 
-        }
     }
-    
-    .home__actividades a , .home__prueba a{
+    .home__actividades a , .home__prueba a , .home__asociate {
         font-size: 25px;
     }
 }

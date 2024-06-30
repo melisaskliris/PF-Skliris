@@ -1,4 +1,15 @@
 /*PAGE ACTIVIDADES*/
+.actividades__titulo{
+    background: radial-gradient(#262826, #040000);
+    padding: 50px 0;
+
+    h2{
+        text-align: center;
+        color:$color-text-primary;
+        font-size: 28px;
+        font-weight:900;
+        }
+}
 .actividades{
     justify-content: center;
     width: 100%;
@@ -8,9 +19,9 @@
     font-weight:$font-weigth;
     color:$color-bg;
     }
+
     p{
     font-size: 18px;
-
     }
 
     img{
@@ -22,17 +33,6 @@
         filter: grayscale(0%);
         }
     }
-}
-.actividades__titulo{
-    background: radial-gradient(#262826, #040000);
-    padding: 50px 0;
-
-    h2{
-        text-align: center;
-        color:$color-text-primary;
-        font-size: 28px;
-        font-weight:900;
-        }
 }
 .actividades__card{
     max-width: 90%;

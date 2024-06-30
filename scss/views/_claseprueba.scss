@@ -1,14 +1,4 @@
 /*pagina clase de prueba*/
-
-.claseprueba__main{
-    @include flex-column-center;
-    text-align: center;
-    background-color: $color-bg;
-
-    h4{
-        color:$color-text-primary;
-    }
-}
 .claseprueba__titulo{
     background: radial-gradient(#262826, #040000);
     padding: 50px 0;
@@ -19,6 +9,15 @@
         text-align: center;
         font-size: 28px;
         font-weight:900;
+    }
+}
+.claseprueba__main{
+    @include flex-column-center;
+    text-align: center;
+    background-color: $color-bg;
+
+    h4{
+        color:$color-text-primary;
     }
 }
 .claseprueba__act{
@@ -41,6 +40,7 @@
         width: 140px;
         border: none;
         color:white;
+        justify-content: center;
         align-content: center;
         background-color:$color-bg-secundary;
         font-weight:$font-weigth;

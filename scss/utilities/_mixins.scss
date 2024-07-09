@@ -29,10 +29,5 @@
     text-decoration: none;
     border: $border-primary;
     border-radius: 20px;
-
-    &:hover,&:active{
-        background-color:$color-bg-secundary;
-        color: $color-bg;
-        border: $color-bg;
-    }
+    animation: parpadear 1s infinite alternate backwards;
 }

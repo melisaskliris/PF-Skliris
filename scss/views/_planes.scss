@@ -39,7 +39,7 @@
     border-radius: 10px;
     transition: transform 0.3s ease;
 
-    &:hover{
+    &:hover,&:checked{
         transform: scale(1.2);
         opacity: 0.9;
         color: #040000;

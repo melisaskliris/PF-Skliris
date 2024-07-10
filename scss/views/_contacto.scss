@@ -22,8 +22,8 @@
     }
 }
 .contacto__img{
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 .contacto__text{
     @include flex-column-center;
@@ -51,7 +51,7 @@
 
     a{
     text-decoration: none;
-    color: yellowgreen;
+    color: $color-text-secundary;
     }
 }
 .icon__contacto{

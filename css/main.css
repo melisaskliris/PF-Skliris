@@ -345,8 +345,8 @@ main {
 }
 
 .contacto__img {
-  width: 300px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
 }
 
 .contacto__text {
@@ -486,7 +486,7 @@ form option .textarea {
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-.planes__list:hover {
+.planes__list:hover, .planes__list:checked {
   transform: scale(1.2);
   opacity: 0.9;
   color: #040000;

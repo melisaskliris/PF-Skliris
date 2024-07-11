@@ -11,8 +11,10 @@
         }
 }
 .actividades{
+    display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    overflow-x: hidden;
 
     h3{
     font-size: 25px;
@@ -35,7 +37,7 @@
     }
 }
 .actividades__card{
-    max-width: 90%;
+    max-width: 100%;
 }
 
 @include respond-to ("tablet"){

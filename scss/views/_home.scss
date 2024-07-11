@@ -59,7 +59,7 @@ main{
 
 .home__actividades{
     grid-area: home__actividades;
-    background: url(/asset/image/crossfithome.jpeg);
+    background: url(../asset/image/crossfithome.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -74,7 +74,7 @@ main{
 }
 .home__prueba{
     grid-area: home__prueba;
-    background: url(/asset/image/pilateshome.jpeg);
+    background: url(../asset/image/pilateshome.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

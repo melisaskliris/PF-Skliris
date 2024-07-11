@@ -136,7 +136,7 @@ main {
   background-size: cover;
   display: flex;
   justify-content: center;
-  filter: brightness(70%);
+  filter: brightness(80%);
   align-items: flex-end;
   padding: 15px;
 }
@@ -153,14 +153,14 @@ main {
 
 .home__actividades {
   grid-area: home__actividades;
-  background: url(../asset/image/croosfit1.jpg);
+  background: url(/asset/image/crossfithome.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding: 15px;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 .home__actividades a {
   background-color: black;
@@ -175,7 +175,7 @@ main {
 
 .home__prueba {
   grid-area: home__prueba;
-  background: url(../asset/image/pilates1.jpg);
+  background: url(/asset/image/pilateshome.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -183,7 +183,7 @@ main {
   align-items: flex-end;
   padding: 15px;
   padding-bottom: 30px;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 .home__prueba a {
   background-color: black;
@@ -488,7 +488,7 @@ form option .textarea {
   transition: transform 0.3s ease;
 }
 .planes__list:hover, .planes__list:checked {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 0.9;
   color: #040000;
   background-color: yellowgreen;
